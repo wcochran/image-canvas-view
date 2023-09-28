@@ -12,7 +12,8 @@ struct ImageView: View {
     var body: some View {
         Image(uiImage: uiimage)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .scaledToFit()
+            // XXX .aspectRatio(contentMode: .fit)
     }
 }
 
